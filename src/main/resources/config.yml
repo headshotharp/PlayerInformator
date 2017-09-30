@@ -1,0 +1,19 @@
+host: localhost
+port: 3306
+user: user
+password: password
+database: database
+telegram:
+  botid: ''
+  chatid: ''
+tresor:
+  enabled: false
+  a:
+    x: 1
+    y: 1
+    z: 1
+  b:
+    x: 2
+    y: 2
+    z: 2
+  world: 'world'

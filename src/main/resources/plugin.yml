@@ -1,0 +1,46 @@
+name: PlayerInformator
+main: de.headshotharp.plugin.PlayerInformator
+version: 1.4.3
+author: HeadShotHarp
+description: >
+             Additional Info in MySql Database for Bukkit users
+commands:
+  askadmin:
+    description: sends a message to admins phone. abuse will cause permanent ban
+    usage: /askadmin <msg>
+  startregister:
+    description: starts the registration process. continue on homepage
+    usage: /startregister
+  resetpassword:
+    description: resets your password. now you can set a new password on homepage
+    usage: /resetpassword
+  money:
+    description: shows the amout of money you have
+    usage: /money
+  balance:
+    description: shows the amout of money you have
+    usage: /balance
+  shop:
+    description: opens the shop and optionally lets you use items.
+    usage: /shop <optional:ID>
+  isregistered:
+    description: checks if a specific player is already registered.
+    usage: /isregistered <playername>
+  ranking:
+    description: shows the top 5 in spcified category
+    usage: /ranking <money/block_break/block_place>
+  refreshdatabase:
+    description: refreshes local user data from mysql
+    usage: /refreshdatabase
+  reloadtresor:
+    description: reloads the tresor info from config file
+    usage: /reloadtresor
+  dt:
+    description: DonaldTrump commands
+    usage: /dt
+  unlimited:
+    description: unlimited place range
+    usage: /unlimited
+  itemshop:
+    description: itemshop
+    usage: /itemshop
