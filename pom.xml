@@ -2,8 +2,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>de.headshotharp.spigot</groupId>
-	<artifactId>PlayerInformator-1.12.2</artifactId>
-	<version>1.4.3</version>
+	<artifactId>playerinformator</artifactId>
+	<version>1.14.4-1.0-SNAPSHOT</version>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -12,28 +12,16 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
-	<repositories>
-		<repository>
-			<id>spigot-repo</id>
-			<url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
-		</repository>
-	</repositories>
-
 	<dependencies>
 		<dependency>
 			<groupId>de.headshotharp.spigot</groupId>
-			<artifactId>EnchantmentHelper-1.12.2</artifactId>
-			<version>1.0</version>
-		</dependency>
-		<dependency>
-			<groupId>de.headshotharp.web</groupId>
-			<artifactId>CommonUtils</artifactId>
-			<version>1.0</version>
+			<artifactId>enchantment-helper</artifactId>
+			<version>1.14.4-1.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>org.spigotmc</groupId>
 			<artifactId>spigot-api</artifactId>
-			<version>1.12.2-R0.1-SNAPSHOT</version>
+			<version>1.14.4-R0.1-SNAPSHOT</version>
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
