@@ -1,7 +1,8 @@
 name: PlayerInformator
 main: de.headshotharp.plugin.PlayerInformator
-version: 1.14.4-1.0
-api-version: 1.14
+version: 1.19.2-1.0
+api-version: 1.19
+api: []
 author: HeadShotHarp
 description: >
              Additional Info in MySql Database for Bukkit users
