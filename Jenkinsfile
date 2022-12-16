@@ -15,17 +15,6 @@ pipeline {
         sh 'mvn clean package --fail-at-end'
       }
     }
-    stage('analyze') {
-      environment {
-        SONAR_TOKEN = credentials('SONAR_TOKEN')
-      }
-      steps {
-        script {
-          def safeBranch = env.GIT_BRANCH.replaceAll("[^a-zA-Z0-9_:{\\.-]+", "-")
-          sh("mvn jacoco:report sonar:sonar --no-transfer-progress -Dsonar.host.url=https://sonar.gmasil.de -Dsonar.login=\$SONAR_TOKEN -Dsonar.projectKey=${env.MAVEN_ARTIFACT}:${safeBranch} \"-Dsonar.projectName=${env.MAVEN_PROJECT_NAME} (${env.GIT_BRANCH})\"")
-        }
-      }
-    }
   }
   post {
     always {
